@@ -1,0 +1,204 @@
+{
+    "id": 391785927,
+    "address": "Pasco, United States",
+    "countryCode": "US",
+    "brandId": 1667,
+    "categoryId": 47,
+    "price": {
+        "currencyName": "USD",
+        "priceAmount": "64.00",
+        "discountedPriceAmount": "54.40",
+        "discountPercentage": 15,
+        "nationalShippingCost": "4.39"
+    },
+    "dateUpdated": "2023-11-30T02:41:07.039894Z",
+    "description": "old school English embroidery Los Angeles pullover hoodie \nHas the perfect boxy fit with wide hood🔥\nno rips other then the neck area on hoodie super comfortable \nsize medium",
+    "pictures": [
+        [
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 150,
+                "height": 150,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P2.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 210,
+                "height": 210,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P4.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 320,
+                "height": 320,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P5.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 480,
+                "height": 480,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P6.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 640,
+                "height": 640,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P1.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 960,
+                "height": 960,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P7.jpg"
+            },
+            {
+                "id": "982ac7149b334d47b49c9a560c39deb8",
+                "width": 1280,
+                "height": 1280,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728398_982ac7149b334d47b49c9a560c39deb8/P0.jpg"
+            }
+        ],
+        [
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 150,
+                "height": 150,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P2.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 210,
+                "height": 210,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P4.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 320,
+                "height": 320,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P5.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 480,
+                "height": 480,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P6.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 640,
+                "height": 640,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P1.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 960,
+                "height": 960,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P7.jpg"
+            },
+            {
+                "id": "bdec973ad18f47c19d7f1ba6758da8d0",
+                "width": 1280,
+                "height": 1280,
+                "url": "https://media-photos.depop.com/b1/43219167/1678728442_bdec973ad18f47c19d7f1ba6758da8d0/P0.jpg"
+            }
+        ]
+    ],
+    "status": "S",
+    "videos": [],
+    "variantSetId": 54,
+    "likeCount": 2,
+    "seller": {
+        "verified": false,
+        "initials": "LH",
+        "id": 43219167,
+        "picture": [
+            {
+                "id": 1624235741,
+                "width": 75,
+                "height": 75,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U2.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 113,
+                "height": 113,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U3.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 150,
+                "height": 150,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U1.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 225,
+                "height": 225,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U4.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 300,
+                "height": 300,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U5.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 450,
+                "height": 460,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U6.jpg"
+            },
+            {
+                "id": 1624235741,
+                "width": 450,
+                "height": 450,
+                "url": "https://media-photos.depop.com/b1/43219167/1624235741_23e69a74431c467a8007ba41662614bd/U0.jpg"
+            }
+        ],
+        "username": "gotheattt",
+        "reviewsRating": 5,
+        "reviewsTotal": 1,
+        "itemsSold": 18,
+        "lastSeen": "2023-11-30T03:03:08.428454Z",
+        "firstName": "lost",
+        "lastName": "heat"
+    },
+    "sizes": [
+        {
+            "id": 4,
+            "name": "M",
+            "quantity": 1
+        }
+    ],
+    "condition": {
+        "id": "used_like_new",
+        "name": "Like new"
+    },
+    "colour": [
+        {
+            "id": "grey",
+            "name": "Grey"
+        }
+    ],
+    "style": [
+        {
+            "id": "sportswear",
+            "name": "Sportswear"
+        },
+        {
+            "id": "streetwear",
+            "name": "Streetwear"
+        },
+        {
+            "id": "casual",
+            "name": "Casual"
+        }
+    ],
+    "brand": "unbranded",
+    "brandName": "Other",
+    "group": "tops",
+    "attributes": {},
+    "productType": "hoodies",
+    "gender": "male",
+    "isKids": false
+}
