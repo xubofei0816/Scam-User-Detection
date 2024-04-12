@@ -81,10 +81,13 @@ Additionally, in modeling, the following were taken into consideration.
 
 The early stopping criterion was triggered at epoch 96, and the model weights obtained at the end of epoch 76 was saved as the final model. The confusion matrix as well as the normalized confusion matrix are presented in Figure 2. (Note that Figure 1 is omitted in this README.md file, which can be found in the full final report in this repo.)
 
+<div align="center">
+  <img src="readme_figures/Figure2_confusion_matrix.png" alt="Confusion Matrix">
+</div>
 
-![Confusion Matrix](readme_figures/Figure2_confusion_matrix.png)
-
-Figure 2. Confusion Matrix and the Normalized Confusion Matrix of the SentEmb NN
+<p align="center">
+  <b>Figure 2. Confusion Matrix and the Normalized Confusion Matrix of the SentEmb NN</b>
+</p>
 
 One drawback of NNs is the low interpretability of their self-extracted “features”, to interpret the model’s internal representations, I performed PCA on the hidden vector before the output layer, and plotted the data points with the X-axis as the first principal component, with the Y-axis as the second principal component. The plotting is shown in Figure 3. 
 
@@ -93,8 +96,11 @@ One drawback of NNs is the low interpretability of their self-extracted “featu
   <img src="readme_figures/Figure3_SentEmbNN_Visualization.png" alt="SentEmb NN Visualization">
 </div>
 
+<p align="center">
+  <b>Figure 3. Visualization on the First Two Principal Components of the Internal Representation of the SentEmb NN from the Hidden Layer Prior to the Output Layer</b>
+</p>
 
-Figure 3. Visualization on the First Two Principal Components of the Internal Representation of the SentEmb NN from the Hidden Layer Prior to the Output Layer
+
 
 This result is very encouraging as the separation between Class 1 (by fake users), and Class 2 (by new users) listings are very clear. Together with the results shown in the confusion matrix, we determined that the SentEmb NN model was able to differentiate between these two target classes very well. While a considerable number of Class 0 users were misclassified as the other two classes by this model, this task could have been easily handled by a tree-based model and were not the focus of the SentEmb NN model. The overall validation accuracy was approximately 90%.
 
