@@ -1,3 +1,7 @@
+# Key Script
+
+SentEmb NN Model - ""
+
 # Introduction and Dataset
 This is a team project for the final course project for DATA 144.
 
