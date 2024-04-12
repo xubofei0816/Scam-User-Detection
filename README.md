@@ -5,10 +5,10 @@ We seek to identify the scammers/scamming listings on E-commerce platforms, usin
 
 In order to detect scam users, our project group collected data from Depop users, both real and fake. We hand-labeled the users according to criteria tabulated in Table 1. The project members identified scam users and products on the website, the details of which were then scraped using Python and the Cloudscraper module, which bypassed any bot detection by Depop. We developed our own scripts for username scraping, and then adopted the product and user variable scraper from github by user Gertje823 (https://github.com/Gertje823/Vinted-Scraper/tree/main). The scraper also included a rate limiter and a sleep time in order to not overwhelm the Depop servers with API requests. The collected data had features about the users such as positive feedback count and the last logged-in time, as well as features describing the various projects on their page such as price, last updated, product descriptions, etc. The full list of both user and product features are tabulated in Table 2. For this project, we annotated 234 users, of which 162 were labeled as established users (Class 0), 12 were labeled as fake users (Class 1), 60 were labeled as new users (Class 2). All products of these users, including selling and sold, sums to a number of 171,910, of which 165,028 were from established users, 4,682 were from fake users, 2,200 were from new users.
 
-<p align="center">
+
  Table 1. User Labeling Criteria
-</p>
-<p align="center">
+
+
 | Established Users (Class 0) |	Fake Users (Class 1) |	New Users (Class 2) |
 | :----------: |	 :----------:  |	 :----------:  |
 | many sold products | few or no sold products|	few or no sold products|
@@ -17,7 +17,7 @@ In order to detect scam users, our project group collected data from Depop users
 | bought products previously |	new user |	bought products previously |
 | reasonable pricing	| often considerably lower than market |	Reasonable pricing, occasionally deviates from market due to their lack of experience | 
 | consistent photo background |	inconsistent photo background (photos stolen from others) |	consistent photo background |
-</p>
+
 
 
 After some initial data analysis, our group realized that a significant portion of the predictions was affected by new sellers (Class 2), which can be more clearly defined as users who have only recently started selling and only have a few products sold, if any. To be more specific, a new seller might not necessarily be a new user on the platform, but their lack of sold products were leading to a less accurate model because they were being falsely predicted as fake sellers. A few of the differences between each class is encapsulated in the Table 1 above but explained more in depth in the following sentences. Many of these new sellers were verifiable as real users, whether because they had social media in their profile’s bio or because they had purchased items from other sellers and received good quality reviews from them. Some other key features of new sellers that differentiated them from established sellers (Class 0) and fake sellers (Class 1) were if they had received less than two good reviews, sold only a few products or if they had migrated from another E-commerce platform such as Poshmark or eBay (but they were selling on Depop under the same username and photos). In these cases we want to not only make a distinction between fake users that might be bots or scammers and the new sellers trying to sell their products, but also between established users with more than a few good reviews and many sold products.
