@@ -10,9 +10,10 @@ After an initial EDA, our project group decided to train the model for classific
  
 Table 3. Features Considered by the Tree-based Models
 
-Variable Names
-'followers', 'following', 'items_sold', 'reviews_rating',
-       'reviews_total', 'size', 'Price', 1000 BOW features
+|Variable Names|
+| :----------: |
+|'followers', 'following', 'items_sold', 'reviews_rating',
+       'reviews_total', 'size', 'Price', 1000 BOW features|
 
 For more details on the tree-based models, please refer to Kai’s individual contribution section.
 Following the tree-based models, we implemented a Neural Net with only the product description textual data as the input variable. For the motivations behind this, modeling details, and result interpretations, please refer to Bofei’s individual contribution section.
