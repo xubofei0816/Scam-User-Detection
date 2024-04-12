@@ -38,7 +38,7 @@ Table 3. Features Considered by the Tree-based Models
 | :----------: |
 |'followers', 'following', 'items_sold', 'reviews_rating', 'reviews_total', 'size', 'Price', 1000 BOW features|
 
-For more details on the tree-based models, please refer to Kai’s individual contribution section.
+For more details on the tree-based models, please refer to Kai’s individual contribution section. (This section is contained in the full project report in this repo.)
 Following the tree-based models, we implemented a Neural Net with only the product description textual data as the input variable. For the motivations behind this, modeling details, and result interpretations, please refer to Bofei’s individual contribution section.
 
 # Individual Contribution (Bofei):
