@@ -88,7 +88,7 @@ Figure 2. Confusion Matrix and the Normalized Confusion Matrix of the SentEmb NN
 
 One drawback of NNs is the low interpretability of their self-extracted “features”, to interpret the model’s internal representations, I performed PCA on the hidden vector before the output layer, and plotted the data points with the X-axis as the first principal component, with the Y-axis as the second principal component. The plotting is shown in Figure 3. 
 
-![SentEmb NN Visualization] (readme_figures/Figure3_SentEmbNN_Visualization.png)
+![SentEmb NN Visualization](readme_figures/Figure3_SentEmbNN_Visualization.png)
 
 Figure 3. Visualization on the First Two Principal Components of the Internal Representation of the SentEmb NN from the Hidden Layer Prior to the Output Layer
 
