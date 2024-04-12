@@ -1,6 +1,6 @@
 # Key Script
 
-SentEmb NN Model - ""
+SentEmb NN Model - "768_512_512_512_256_256_3_SentEmb_NN.ipynb" (It loads in the labeled product description embeding as a csv file, train the NN, and perform the visualization.)
 
 # Introduction and Dataset
 This is a team project for the final course project for DATA 144.
