@@ -18,6 +18,18 @@ In order to detect scam users, our project group collected data from Depop users
 | reasonable pricing	| often considerably lower than market |	Reasonable pricing, occasionally deviates from market due to their lack of experience | 
 | consistent photo background |	inconsistent photo background (photos stolen from others) |	consistent photo background |
 
+<div align="center">
+  <b>Table 1. User Labeling Criteria</b>
+
+  | Established Users (Class 0) | Fake Users (Class 1) | New Users (Class 2) |
+  | :--------------------------: | :------------------: | :-----------------: |
+  | many sold products           | few or no sold products | few or no sold products |
+  | many good reviews            | 0 good reviews | 0 to 2 good reviews |
+  | social media                 | linked no other form of ID | social media linked |
+  | bought products previously   | new user | bought products previously |
+  | reasonable pricing           | often considerably lower than market | Reasonable pricing, occasionally deviates from market due to their lack of experience |
+  | consistent photo background  | inconsistent photo background (photos stolen from others) | consistent photo background |
+</div>
 
 
 After some initial data analysis, our group realized that a significant portion of the predictions was affected by new sellers (Class 2), which can be more clearly defined as users who have only recently started selling and only have a few products sold, if any. To be more specific, a new seller might not necessarily be a new user on the platform, but their lack of sold products were leading to a less accurate model because they were being falsely predicted as fake sellers. A few of the differences between each class is encapsulated in the Table 1 above but explained more in depth in the following sentences. Many of these new sellers were verifiable as real users, whether because they had social media in their profile’s bio or because they had purchased items from other sellers and received good quality reviews from them. Some other key features of new sellers that differentiated them from established sellers (Class 0) and fake sellers (Class 1) were if they had received less than two good reviews, sold only a few products or if they had migrated from another E-commerce platform such as Poshmark or eBay (but they were selling on Depop under the same username and photos). In these cases we want to not only make a distinction between fake users that might be bots or scammers and the new sellers trying to sell their products, but also between established users with more than a few good reviews and many sold products.
