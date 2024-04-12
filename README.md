@@ -5,19 +5,6 @@ We seek to identify the scammers/scamming listings on E-commerce platforms, usin
 
 In order to detect scam users, our project group collected data from Depop users, both real and fake. We hand-labeled the users according to criteria tabulated in Table 1. The project members identified scam users and products on the website, the details of which were then scraped using Python and the Cloudscraper module, which bypassed any bot detection by Depop. We developed our own scripts for username scraping, and then adopted the product and user variable scraper from github by user Gertje823 (https://github.com/Gertje823/Vinted-Scraper/tree/main). The scraper also included a rate limiter and a sleep time in order to not overwhelm the Depop servers with API requests. The collected data had features about the users such as positive feedback count and the last logged-in time, as well as features describing the various projects on their page such as price, last updated, product descriptions, etc. The full list of both user and product features are tabulated in Table 2. For this project, we annotated 234 users, of which 162 were labeled as established users (Class 0), 12 were labeled as fake users (Class 1), 60 were labeled as new users (Class 2). All products of these users, including selling and sold, sums to a number of 171,910, of which 165,028 were from established users, 4,682 were from fake users, 2,200 were from new users.
 
-
- Table 1. User Labeling Criteria
-
-
-| Established Users (Class 0) |	Fake Users (Class 1) |	New Users (Class 2) |
-| :----------: |	 :----------:  |	 :----------:  |
-| many sold products | few or no sold products|	few or no sold products|
-| many good reviews |	0 good reviews	| 0 to 2 good reviews |
-| social media | linked	no other form of ID |	social media linked |
-| bought products previously |	new user |	bought products previously |
-| reasonable pricing	| often considerably lower than market |	Reasonable pricing, occasionally deviates from market due to their lack of experience | 
-| consistent photo background |	inconsistent photo background (photos stolen from others) |	consistent photo background |
-
 <div align="center">
   <b>Table 1. User Labeling Criteria</b>
 
@@ -34,21 +21,24 @@ In order to detect scam users, our project group collected data from Depop users
 
 After some initial data analysis, our group realized that a significant portion of the predictions was affected by new sellers (Class 2), which can be more clearly defined as users who have only recently started selling and only have a few products sold, if any. To be more specific, a new seller might not necessarily be a new user on the platform, but their lack of sold products were leading to a less accurate model because they were being falsely predicted as fake sellers. A few of the differences between each class is encapsulated in the Table 1 above but explained more in depth in the following sentences. Many of these new sellers were verifiable as real users, whether because they had social media in their profile’s bio or because they had purchased items from other sellers and received good quality reviews from them. Some other key features of new sellers that differentiated them from established sellers (Class 0) and fake sellers (Class 1) were if they had received less than two good reviews, sold only a few products or if they had migrated from another E-commerce platform such as Poshmark or eBay (but they were selling on Depop under the same username and photos). In these cases we want to not only make a distinction between fake users that might be bots or scammers and the new sellers trying to sell their products, but also between established users with more than a few good reviews and many sold products.
 
-Table 2. Available Variables Considered in This Project
+<div align="center">
+  <b>Table 2. Available Variables Considered in This Project</b>
 
-| User Variables	| Product Variables |
-|  :----------: 	|  :----------:  |
-| Username <br> User_id <br> Bio <br> first_name <br> followers <br> following <br> initials <br> items_sold <br> last_name <br> last_seen <br> Avatar <br> reviews_rating <br> reviews_total <br> verified <br> website |	ID <br> Sold <br> User_id <br> Gender <br> Category <br> Size <br> State <br> Brand <br> Colors <br> Price <br> Image <br> Description <br> Title <br> Platform <br> Address <br> discountedPriceAmount <br> dateUpdated |
+  | User Variables	| Product Variables |
+  | :------------: | :---------------: |
+  | Username <br> User_id <br> Bio <br> first_name <br> followers <br> following <br> initials <br> items_sold <br> last_name <br> last_seen <br> Avatar <br> reviews_rating <br> reviews_total <br> verified <br> website | ID <br> Sold <br> User_id <br> Gender <br> Category <br> Size <br> State <br>
 
 
 # EDA and Methods
 After an initial EDA, our project group decided to train the model for classification on a product level, for which the labels were “inherited” from their sellers. We decided to use features that we noticed in our initial runthrough of Depop for scam users that were key identifiers, such as suspiciously low prices, negative reviews, lack of sold products, and so on. By looking at a subset of raw data, we realized that there was an enormous amount of words in product descriptions when combined so we decided to featurize the description with unigrams, which will be discussed further in the individual contribution sections. We tabulated all the features considered by the tree-based models in Table 3. 
  
-Table 3. Features Considered by the Tree-based Models
+<div align="center">
+  <b>Table 3. Features Considered by the Tree-based Models</b>
 
-|Variable Names|
-| :----------: |
-|'followers', 'following', 'items_sold', 'reviews_rating', 'reviews_total', 'size', 'Price', 1000 BOW features|
+  | Variable Names |
+  | :------------: |
+  | 'followers', 'following', 'items_sold', 'reviews_rating', 'reviews_total', 'size', 'Price', 1000 BOW features |
+</div>
 
 For more details on the tree-based models, please refer to Kai’s individual contribution section. (This section is contained in the full project report in this repo.)
 Following the tree-based models, we implemented a Neural Net with only the product description textual data as the input variable. For the motivations behind this, modeling details, and result interpretations, please refer to Bofei’s individual contribution section.
