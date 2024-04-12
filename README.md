@@ -26,7 +26,8 @@ After some initial data analysis, our group realized that a significant portion 
 
   | User Variables	| Product Variables |
   | :------------: | :---------------: |
-  | Username <br> User_id <br> Bio <br> first_name <br> followers <br> following <br> initials <br> items_sold <br> last_name <br> last_seen <br> Avatar <br> reviews_rating <br> reviews_total <br> verified <br> website | ID <br> Sold <br> User_id <br> Gender <br> Category <br> Size <br> State <br>
+  | Username <br> User_id <br> Bio <br> first_name <br> followers <br> following <br> initials <br> items_sold <br> last_name <br> last_seen <br> Avatar <br> reviews_rating <br> reviews_total <br> verified <br> website | ID <br> Sold <br> User_id <br> Gender <br> Category <br> Size <br> State <br> Brand <br> Colors <br> Price <br> Image <br> Description <br> Title <br> Platform <br> Address <br> discountedPriceAmount <br> dateUpdated |
+</div>
 
 
 # EDA and Methods
