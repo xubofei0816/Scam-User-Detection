@@ -82,7 +82,7 @@ Additionally, in modeling, the following were taken into consideration.
 
 
 
-
+![Confusion Matrix](readme_figures/Figure2_confusion_matrix.png)
 
 
 
